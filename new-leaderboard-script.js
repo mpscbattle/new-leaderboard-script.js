@@ -464,32 +464,6 @@ function submitResults() {
     }
 
 
-    // Percentage element असल्यास दाखवा
-    // तुमच्या HTML मध्ये नसले तरी error येणार नाही
-
-    const percentageElement =
-        document.getElementById("percentage");
-
-    if (percentageElement) {
-
-        percentageElement.textContent =
-            percent;
-    }
-
-
-    // Result message
-
-    const resultMessage =
-        document.getElementById("resultMessage");
-
-    if (resultMessage) {
-
-        resultMessage.innerHTML =
-            `You scored <b>${correctCount}</b> out of <b>${questions.length}</b>
-             (${percent}%)`;
-    }
-
-
     // Scroll report
 
     setTimeout(() => {
