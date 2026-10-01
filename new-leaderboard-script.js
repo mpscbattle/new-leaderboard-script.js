@@ -293,9 +293,9 @@ function updateTimer() {
         `🕛 ${hDisplay}:${mDisplay}:${sDisplay}`;
 
 
-    // Last 5 minutes
+    // Last 2 minutes
 
-    if (timer <= 300) {
+    if (timer <= 120) {
 
         timerDiv.style.color = "red";
 
